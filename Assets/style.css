@@ -1,15 +1,18 @@
+
+/* Removes the default white border on website */
 *{
     margin:0;
     padding:0;
 }
 
+/* set default font for whole website */
 body{
     font-family: monospace;
 }
+/* set header to a flex box and applied styling attributes*/
 .header{
     display: flex;
     height: 100px;
-   
     justify-content: space-between;
     color:dimgrey;
     background-color: dimgrey;  
@@ -23,9 +26,11 @@ body{
 .header nav ul{
     list-style-type: none;
 }
+/* Made nav list to be in a row not the default column */
 .header nav ul li {
     display: inline-block;
 }
+/* Styled the displayed title on website */
 h1{
     padding-left: 40px;
     background-color: skyblue;
@@ -34,6 +39,7 @@ h1{
     height: 60px;
     width: fit-content;
 }
+/* removed default anchor attributes for my own */
 a {
     font-weight: bold;
     text-decoration: underline;
@@ -41,16 +47,20 @@ a {
     text-underline-offset: 5px;
     color: skyblue;
 }
+/* top decorative image container */
 .container {
     position: relative;
     text-align: right;
     color: white;
 }
+/* Used object-fit to crop the image 
+rather than resizing so resolution stays the same */
 .picture{
     object-fit: cover;
     width: 100%;
     height: 400px;
 }
+/* class to place the text in top decorative image */
 .bottom-right{
     font-size: 20px;
     position: absolute;
@@ -59,6 +69,7 @@ a {
     background-color: skyblue;
     padding: 5px;
 }
+/* class to place the title of the project within each image */
 .bottom-left{  
     font-size: 20px;
     position: relative;
@@ -69,10 +80,13 @@ a {
     width: fit-content;
     z-index: 3;
 }
+/* set main to be a flexbox */
 main{
     display: flex;
     margin: 5px 0;
 }
+/* class for the styling of flex box for
+ text on the left side of each section*/
 .label {
     flex: 0 0 20%;
     border-right: 5px solid navy;
@@ -80,24 +94,28 @@ main{
     text-align: right;
     margin: 5px;
 }
-
+/* class to clean up he look of the title of each section */
 .margin {
-    font-size: 30px;
+    font-size: 40px;
     margin-top: 30px;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
+/* sets the sizing of paragraph about me in the flex box */
 .paragraph {
     flex: 4 1 auto;
     width: 60%;
     font-size: 20px;
     margin: 20px 60px 20px 20px;
 }
+/* class for work section set to flex box */
 section {
     display: flex;
     flex: 4 1 auto;
     width: 100%;
     margin: 5px 0;
 }
+/* class section for images set to flex box and size, direction is set */
 .images{
     display: flex;  
     flex: 4 1 auto;
@@ -105,6 +123,7 @@ section {
     margin: 20px 60px 20px 20px;
     flex-direction: column;
 }
+/* class for big image specifically */
 .big{
     position: relative;
     background-image: url(../Assets/surf.jpg);
@@ -113,20 +132,18 @@ section {
     height: 400px;
     border: solid skyblue 5px;
     margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
 }
-.surf{
-    background: yellow;
-    flex: 4 1 auto;
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-    border: solid skyblue 5px;
-}
+/* class for small images set to flex box*/
 .smallSection {
     display: flex;
     flex: 1 1 auto;
     flex-wrap: wrap;
 }
+/* image set up and border set up */
 .small{
     position: relative;
     background-image: url(../Assets/beach.jpg);
@@ -138,25 +155,11 @@ section {
     border: solid skyblue 5px;
     margin: 10px;
 }
-.links{
-    font-weight: bold;
-    display: inline-block;
-    text-decoration: underline;
-    text-decoration-thickness: 5px;
-    text-underline-offset: 5px;
-    color: navy;
-    margin: 20px;
-}
-.projects{
-    font-weight: bold;
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-    margin: 20px;
-}
+/* footer  set to be a flex box*/
 footer{
     display: flex;
 }
+/* class for footer links to display nicely in a flex box */
 .foot {
     justify-content: space-evenly;
     display: flex;
@@ -167,6 +170,17 @@ h4{
     margin: 20px;
     font-size: 20px;
 }
+/* class for custom decoration anchors in footer */
+.links{
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+    color: navy;
+    margin: 20px;
+}
+/* class with psuedo element to set up the overlay image with an opacity */
 .small::after{
     background: rgb(255, 104, 104);
     position: absolute;
@@ -179,10 +193,14 @@ h4{
     opacity: .2;
     transition: opacity .3s;
 }
+/* psuedo element to cause the opacity
+ to shift to zero when your mouse hovers over the image */
 .small:hover::after {
     transition: opacity .3s;
     opacity: 0;
 }
+/* class with psuedo element to set up the overlay image with an opacity */
+/* repeated code to satisfy the different sizing of the bigger image */
 .big::after{
     background: rgb(255, 104, 104);
     position: absolute;
@@ -195,11 +213,13 @@ h4{
     opacity: .2;
     transition: opacity .3s;
 }
+/* psuedo element to cause the opacity
+ to shift to zero when your mouse hovers over the image */
 .big:hover::after {
     transition: opacity .3s;
     opacity: 0;
 }
-
+/* media query to adjust website when the width is changed to below 800px */
 @media screen and (max-width: 800px) {
     .header {
         height: 400px;
