@@ -1,9 +1,15 @@
+*{
+    margin:0;
+    padding:0;
+}
 
 body{
     font-family: monospace;
 }
 .header{
     display: flex;
+    height: 100px;
+   
     justify-content: space-between;
     color:dimgrey;
     background-color: dimgrey;  
@@ -11,7 +17,7 @@ body{
 .header nav{
     font-size: 40px;
     position: relative;
-    top: 20px;
+    top: 40px;
     right: 30px;
 }
 .header nav ul{
@@ -23,7 +29,10 @@ body{
 h1{
     padding-left: 40px;
     background-color: skyblue;
+    margin: 20px 0px;
     font-size: 400%;
+    height: 60px;
+    width: fit-content;
 }
 a {
     font-weight: bold;
@@ -50,35 +59,168 @@ a {
     background-color: skyblue;
     padding: 5px;
 }
+.bottom-left{  
+    font-size: 20px;
+    position: relative;
+    left:0px;
+    top:350px;
+    background-color: skyblue;
+    padding: 5px;
+    width: fit-content;
+    z-index: 3;
+}
 main{
     display: flex;
-    flex-wrap: wrap;
+    margin: 5px 0;
 }
-.section {
-    flex: 10%;
-    flex-direction: column;
+.label {
+    flex: 0 0 20%;
     border-right: 5px solid navy;
-    height: 400px;
+    height: auto;
     text-align: right;
-    
+    margin: 5px;
 }
 
-/* Fix the collison between .margin and .section h2 so that About Me has a top margin */
-.section h2{
-    font-size: 30px;
-    flex-direction: column;
-}
 .margin {
+    font-size: 30px;
     margin-top: 30px;
     margin-right: 15px;
 }
 .paragraph {
+    flex: 4 1 auto;
+    width: 60%;
     font-size: 20px;
     margin: 20px 60px 20px 20px;
-    flex: 60%;
 }
-.
+section {
+    display: flex;
+    flex: 4 1 auto;
+    width: 100%;
+    margin: 5px 0;
+}
+.images{
+    display: flex;  
+    flex: 4 1 auto;
+    width: 60%;
+    margin: 20px 60px 20px 20px;
+    flex-direction: column;
+}
+.big{
+    position: relative;
+    background-image: url(../Assets/surf.jpg);
+    flex: 1 1 auto;
+    width: 100%;
+    height: 400px;
+    border: solid skyblue 5px;
+    margin: 10px;
+}
+.surf{
+    background: yellow;
+    flex: 4 1 auto;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border: solid skyblue 5px;
+}
+.smallSection {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+}
+.small{
+    position: relative;
+    background-image: url(../Assets/beach.jpg);
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 400px;
+    z-index: 0;
+    border: solid skyblue 5px;
+    margin: 10px;
+}
+.links{
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 5px;
+    color: navy;
+    margin: 20px;
+}
+.projects{
+    font-weight: bold;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+}
+footer{
+    display: flex;
+}
+.foot {
+    justify-content: space-evenly;
+    display: flex;
+    flex: 4 1 auto;
+    flex-direction: row;
+}
+h4{
+    margin: 20px;
+    font-size: 20px;
+}
+.small::after{
+    background: rgb(255, 104, 104);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .2;
+    transition: opacity .3s;
+}
+.small:hover::after {
+    transition: opacity .3s;
+    opacity: 0;
+}
+.big::after{
+    background: rgb(255, 104, 104);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .2;
+    transition: opacity .3s;
+}
+.big:hover::after {
+    transition: opacity .3s;
+    opacity: 0;
+}
 
+@media screen and (max-width: 800px) {
+    .header {
+        height: 400px;
+        flex-direction: column;
+    }
+    .header nav ul li {
+        display: block;
+    }
 
+    .header nav{
+        font-size: 40px;
+        position: relative;
+        text-align: center;
+        top: -20px;
+        right: 0px;
+
+    }
+    .foot{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
 
 
