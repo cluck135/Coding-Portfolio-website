@@ -126,7 +126,7 @@ section {
 /* class for big image specifically */
 .big{
     position: relative;
-    background-image: url(../Assets/surf.jpg);
+    background-image: url(../Assets/images/surf.jpg);
     flex: 1 1 auto;
     width: 100%;
     height: 400px;
@@ -146,7 +146,7 @@ section {
 /* image set up and border set up */
 .small{
     position: relative;
-    background-image: url(../Assets/beach.jpg);
+    background-image: url(../Assets/images/beach.jpg);
     flex: 1 1 auto;
     flex-wrap: wrap;
     width: 40%;
