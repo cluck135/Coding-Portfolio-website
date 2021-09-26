@@ -21,12 +21,12 @@ Used HTML and CSS to create this website.
 
 I learned a lot more about layering with HTML and how to properly use CSS flex boxes, pseudo elements, and media queries. I learned more about how to properly organize a website from scratch so it's UI is intuitive to the user. 
 
-## Project pictures/websitelink !
+## Project pictures/websitelink 
 
 Screenshots below!
 ![Image of website](./Assets/website.PNG)
 ![Image of website 2](./Assets/website2.PNG)
 
-Link to Portfolio website below!
+Link to Portfolio website
 [Portfolio Website](https://cluck135.github.io/Coding-Portfolio-website/)
 
