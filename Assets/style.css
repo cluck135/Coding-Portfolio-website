@@ -79,6 +79,7 @@ rather than resizing so resolution stays the same */
     padding: 5px;
     width: fit-content;
     z-index: 3;
+    color: white;
 }
 /* set main to be a flexbox */
 main{
@@ -126,7 +127,8 @@ section {
 /* class for big image specifically */
 .big{
     position: relative;
-    background-image: url(../Assets/images/surf.jpg);
+    background-image: url(../Assets/images/passworkGenerator.PNG);
+    background-size: 100% 400px;
     flex: 1 1 auto;
     width: 100%;
     height: 400px;
@@ -147,6 +149,7 @@ section {
 .small{
     position: relative;
     background-image: url(../Assets/images/beach.jpg);
+    text-decoration: none;
     flex: 1 1 auto;
     flex-wrap: wrap;
     width: 40%;
@@ -154,6 +157,7 @@ section {
     z-index: 0;
     border: solid skyblue 5px;
     margin: 10px;
+    color: white;
 }
 /* footer  set to be a flex box*/
 footer{
@@ -180,9 +184,21 @@ h4{
     color: navy;
     margin: 20px;
 }
+.secondProj{
+    background-image: url(./images/workDayScheduler.PNG);
+    background-size: 100% 400px;
+}
+.thirdProj{
+    background-image: url(./images/DogAdoption.PNG);
+    background-size: 100% 400px;
+}
+.fourthProj{
+    background-image: url(./images/weatherDash.PNG);
+    background-size: 100% 400px;
+}
 /* class with psuedo element to set up the overlay image with an opacity */
 .small::after{
-    background: rgb(255, 104, 104);
+    background: rgb(104, 205, 255);
     position: absolute;
     content: "";
     top: 0;
@@ -202,7 +218,7 @@ h4{
 /* class with psuedo element to set up the overlay image with an opacity */
 /* repeated code to satisfy the different sizing of the bigger image */
 .big::after{
-    background: rgb(255, 104, 104);
+    background: rgb(104, 205, 255);
     position: absolute;
     content: "";
     top: 0;
