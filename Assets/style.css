@@ -1,4 +1,3 @@
-
 /* Removes the default white border on website */
 *{
     margin:0;
@@ -51,7 +50,7 @@ a {
 .container {
     position: relative;
     text-align: right;
-    color: white;
+    color: ivory;
 }
 /* Used object-fit to crop the image 
 rather than resizing so resolution stays the same */
@@ -79,7 +78,7 @@ rather than resizing so resolution stays the same */
     padding: 5px;
     width: fit-content;
     z-index: 3;
-    color: white;
+    color: ivory;
 }
 /* set main to be a flexbox */
 main{
@@ -127,7 +126,7 @@ section {
 /* class for big image specifically */
 .big{
     position: relative;
-    background-image: url(../Assets/images/passworkGenerator.PNG);
+    background-image: url(../Assets/images/Booya.PNG);
     background-size: 100% 400px;
     flex: 1 1 auto;
     width: 100%;
@@ -194,6 +193,10 @@ h4{
 }
 .fourthProj{
     background-image: url(./images/weatherDash.PNG);
+    background-size: 100% 400px;
+}
+.fifthProj{
+    background-image: url(../Assets/images/tech-blog.PNG);
     background-size: 100% 400px;
 }
 /* class with psuedo element to set up the overlay image with an opacity */
