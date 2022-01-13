@@ -1,27 +1,32 @@
 ## Title
 
-This projects title is Portfolio Website and it is a website I made from scratch using my new found HTML and CSS coding skills so that it follows accessibility standards.
+Portfolio Website is a website I made from scratch using my new found HTML and CSS coding skills, that displays my most recent work as a full stack dev/web dev
 
-## Languages
+## Table of Contents
+- [Usage Information](#usage-information)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
+- [Questions](#questions)
+- [Project](#project)
 
-Used HTML and CSS to create this website.
+## Usage Information
+right click index.html and open in browser
 
-## Objective
+## Contribution Guidelines
+Open Source
 
-- Created a website with working navigation links.
-- Integrate semantic HTML elements into the index.html.
-- Include Alt attributes for the sourced images.
-- Include a concise Title element.
-- Made it flexible when the size of the window is shrinked so that all elements are visible
-- Made working links in the contact section
-- Made the first project link accessible
+## Test Instructions
+N/A
 
+## License
+This project is licensed under the terms of the [MIT](https://opensource.org/licenses/MIT) license
 
-## What was learned
+## Questions
+My Github Profile: [cluck135](https://github.com/cluck135)
 
-I learned a lot more about layering with HTML and how to properly use CSS flex boxes, pseudo elements, and media queries. I learned more about how to properly organize a website from scratch so it's UI is intuitive to the user. 
+Email me your questions at: [casenluck@gmail.com](mailto:casenluck@gmail.com)
 
-## Project pictures/websitelink 
+## Project
 
 Screenshots below!
 ![Image of website](./Assets/images/website.PNG)
