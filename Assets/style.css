@@ -9,24 +9,24 @@ body{
     font-family: monospace;
 }
 /* set header to a flex box and applied styling attributes*/
-.header{
+header{
     display: flex;
     height: 100px;
     justify-content: space-between;
     color:dimgrey;
     background-color: dimgrey;  
 }
-.header nav{
+header nav{
     font-size: 40px;
     position: relative;
     top: 40px;
     right: 30px;
 }
-.header nav ul{
+header nav ul{
     list-style-type: none;
 }
 /* Made nav list to be in a row not the default column */
-.header nav ul li {
+header nav ul li {
     display: inline-block;
 }
 .navColor{
@@ -57,7 +57,7 @@ rather than resizing so resolution stays the same */
     width: 100%;
     height: 400px;
     position: relative;
-    color: ivory;
+    color: black;
 }
 /*profile image*/
 .profile {
@@ -75,7 +75,7 @@ rather than resizing so resolution stays the same */
     height: 250px;
     object-fit: cover;
     object-position: 0% 0%;
-    top: 25px;
+    top: 20px;
     left: 20px;
     border: 5px solid black;
     border-radius: 5px;
@@ -95,12 +95,12 @@ rather than resizing so resolution stays the same */
     font-size: 20px;
     position: relative;
     left:0px;
-    top:350px;
+    top: 320px;
     background-color: skyblue;
     padding: 5px;
     width: fit-content;
     z-index: 3;
-    color: ivory;
+    color: black;
 }
 /* set main to be a flexbox */
 main{
@@ -115,7 +115,7 @@ main{
 /* class for the styling of flex box for
  text on the left side of each section*/
 .label {
-    flex: 0 0 20%;
+    flex: 0 0 15%;
     border-right: 5px solid navy;
     height: auto;
     text-align: right;
@@ -226,7 +226,7 @@ footer{
 }
 h4{
     margin: 20px;
-    font-size: 20px;
+    font-size: 30px;
 }
 /* class for custom decoration anchors in footer */
 .links{
@@ -344,22 +344,81 @@ h4{
     background-color: navy;
 }
 /* media query to adjust website when the width is changed to below 800px */
-@media screen and (max-width: 800px) {
-    .header {
-        height: 400px;
+@media screen and (max-width: 950px) {
+    header {
+        height: 300px;
         flex-direction: column;
     }
-    .header nav ul li {
+    header nav ul li {
         display: block;
+        padding: 8px;
     }
-
-    .header nav{
+    header nav{
         font-size: 40px;
         position: relative;
         text-align: center;
         top: -20px;
         right: 0px;
+    }
+    h1 {
+        text-align: center;
+        padding: 0;
+        width: 50%;
+        margin: 20px 25%;
+        border-radius: 1rem;
+    }
+    .container {
+        height: 500px;
+    }
+    .profile {
+        width: 300px;
+        margin: 0px 25%;
+        border-radius: 1rem;
 
+    }
+    .profile-img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 0% 0%;
+        top: 20px;
+        left: 20px;
+        border: 5px solid black;
+        border-radius: 5px;
+        box-shadow: 5px 5px 10px black;
+    }
+    .bottom-right {
+        font-size: 20px;
+        position: absolute;
+        right: 25px;
+        bottom: 10px;
+        background-color: skyblue;
+        padding: 5px;
+        margin: 0px 5%;
+    }
+    .about {
+        flex-direction: column;
+    }
+    .label {
+        text-align: center;
+        border-right: 0px;
+        border-bottom: 5px solid navy;
+    }
+    .paragraph {
+        margin: 20px;
+        width: 95%;
+
+    }
+    section {
+        flex-direction: column;
+    }
+    .images {
+        justify-content: center;
+        width: 100%;
+        margin: 20px 0px 20px 0px;
+    }
+    footer {
+        flex-direction: column;
     }
     .foot{
         width: 100%;
