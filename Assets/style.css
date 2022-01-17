@@ -35,6 +35,9 @@ header nav ul li {
 /* Styled the displayed title on website */
 h1{
     padding-left: 40px;
+    padding-right: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     background-color: skyblue;
     margin: 20px 0px;
     font-size: 400%;
@@ -344,7 +347,7 @@ h4{
     background-color: navy;
 }
 /* media query to adjust website when the width is changed to below 800px */
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1050px) {
     header {
         height: 300px;
         flex-direction: column;
@@ -416,6 +419,13 @@ h4{
         justify-content: center;
         width: 100%;
         margin: 20px 0px 20px 0px;
+    }
+    .smallSection {
+        width: 100%;
+        flex-direction: column;
+    }
+    .small {
+        width: 100%;
     }
     footer {
         flex-direction: column;
