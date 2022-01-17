@@ -92,6 +92,9 @@ rather than resizing so resolution stays the same */
     bottom: 10px;
     background-color: skyblue;
     padding: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 /* class to place the title of the project within each image */
 .bottom-left{  
@@ -398,6 +401,7 @@ h4{
         background-color: skyblue;
         padding: 5px;
         margin: 0px 5%;
+        border-radius: 5px;
     }
     .about {
         flex-direction: column;
